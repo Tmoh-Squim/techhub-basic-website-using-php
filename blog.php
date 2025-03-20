@@ -56,6 +56,26 @@ function fetchBlogs() {
 <?php include 'includes/header.php'; ?>
 
 <style>
+    .blog-hero {
+        background: url('https://blog.feedspot.com/wp-content/uploads/2016/08/technology.jpeg') no-repeat center center/cover;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .blog-hero h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .blog-hero p {
+        font-size: 20px;
+        max-width: 700px;
+    }
     .blog-container {
         display: flex;
         flex-direction: column;
@@ -129,6 +149,12 @@ function fetchBlogs() {
         }
     }
 </style>
+<!-- Hero Section -->
+<section class="blog-hero">
+    <h1>Tech Blogs</h1>
+    <p>Stay updated with the latest trends in AI, cloud computing, cybersecurity, and more.</p>
+</section>
+
 <h2>Latest Blogs</h2>
 
 <section class="blog-container">
